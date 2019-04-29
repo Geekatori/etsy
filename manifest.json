@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Etsy",
+	"version": "1.2",
+	"description": "Full resolution images",
+	"icons": {
+		"48": "icons/etsy-48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.etsy.com/*"],
+			"js": ["etsify.js"]
+		}
+	]
+}
